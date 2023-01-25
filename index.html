@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- local css -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agenda de Contatos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="logo"><i class="fa-solid fa-address-book" alt="agenda de contatos"></i></span>
+            <h1>Agenda de Contatos</h1>
+        </header>
+
+        <form action="/" id="form-contato">
+            <input type="text" name="" id="nome-contato" required placeholder="Nome do contato">
+            <input type="tel" name="" id="tel-contato" required placeholder="(99) 99999-9999" pattern="\([2-9]{2}\)\s[0-9]{4,5}-[0-9]{4}">
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- conteúdo adicionado através do js -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de Contatos</td>
+                    <td id="total-contatos">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
